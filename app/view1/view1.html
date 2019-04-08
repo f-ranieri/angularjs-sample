@@ -1,0 +1,222 @@
+<div class="container">
+
+    <div class="panel panel-default">
+        <div class="panel-heading clearfix">
+            <h4 class="panel-title" data-toggle="collapse" data-target="#collapseOne">
+                View Content
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">
+                <form class="form-horizontal">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>Account Details</legend>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="displayname">Display Name</label>
+                            <div class="col-md-6">
+                                <input id="displayname" name="displayname" type="text" placeholder="Please enter a display name "
+                                    class="form-control input-md" required="">
+                                <span class="help-block">Do not use any salutation</span>
+                            </div>
+                        </div>
+
+                        <!-- Prepended text-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="designation">Designation</label>
+                            <div class="col-md-6">
+                                <select id="designation" name="designation" class="form-control">
+                                    <option value="Director">Director</option>
+                                    <option value="ProductHead">Product Head</option>
+                                    <option value="GeneralManager">General Manager</option>
+                                    <option value="ProductManager">Product Manager</option>
+                                    <option value="TeamLead">Team Lead</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="department">Department</label>
+                            <div class="col-md-6">
+                                <select id="department" name="department" class="form-control">
+                                    <option value="Accounts">Accounts</option>
+                                    <option value="HR">HR</option>
+                                    <option value="Finance">Finance</option>
+                                    <option value="Loan">Loan</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="publickey">Public Key</label>
+                            <div class="col-md-4">
+                                <div class="input-group input-file" name="publickey">
+                                    <input type="text" class="form-control" placeholder='Choose cer file...' />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default btn-choose" type="button">Choose</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+
+                        <legend>Display Settings</legend>
+
+                        <div class="form-group">
+                            <label for="regno" class="col-md-4 control-label">Max Entries per page</label>
+                            <div class="col-md-2">
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default btn-number" disabled="disabled"
+                                            data-type="minus" data-field="quant[1]">
+                                            <span class="glyphicon glyphicon-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1"
+                                        max="10">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default btn-number" data-type="plus"
+                                            data-field="quant[1]">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="regno" class="col-md-4 control-label">Dont show entries before</label>
+                            <div class="col-md-2">
+                                <input id="lastdate" name="lastdate" type="date" placeholder="Please enter a display name "
+                                    class="form-control input-md" required="">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title" data-toggle="collapse" data-target="#collapseOne2">
+                    View Content
+                </h4>
+            </div>
+            <div id="collapseOne2" class="panel-collapse collapse">
+                <div class="panel-body">
+                        <div class="row">
+		
+        
+                                <div class="col-md-12">
+                                <h4>Bootstrap Snipp for Datatable</h4>
+                                <div class="table-responsive">
+                        
+                                        
+                                      <table id="mytable" class="table table-bordred table-striped">
+                                           
+                                           <thead>
+                                           
+                                           <th><input type="checkbox" id="checkall" /></th>
+                                           <th>First Name</th>
+                                            <th>Last Name</th>
+                                             <th>Address</th>
+                                             <th>Email</th>
+                                             <th>Contact</th>
+                                              <th>Edit</th>
+                                              
+                                               <th>Delete</th>
+                                           </thead>
+                            <tbody>
+                            
+                            <tr>
+                            <td><input type="checkbox" class="checkthis" /></td>
+                            <td>Mohsin</td>
+                            <td>Irshad</td>
+                            <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+                            <td>isometric.mohsin@gmail.com</td>
+                            <td>+923335586757</td>
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+                            <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+                            </tr>
+                            
+                         <tr>
+                            <td><input type="checkbox" class="checkthis" /></td>
+                            <td>Mohsin</td>
+                            <td>Irshad</td>
+                            <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+                            <td>isometric.mohsin@gmail.com</td>
+                            <td>+923335586757</td>
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+                            <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+                            </tr>
+                            
+                            
+                         <tr>
+                            <td><input type="checkbox" class="checkthis" /></td>
+                            <td>Mohsin</td>
+                            <td>Irshad</td>
+                            <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+                            <td>isometric.mohsin@gmail.com</td>
+                            <td>+923335586757</td>
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+                            <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+                            </tr>
+                            
+                            
+                            
+                         <tr>
+                            <td><input type="checkbox" class="checkthis" /></td>
+                            <td>Mohsin</td>
+                            <td>Irshad</td>
+                            <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+                            <td>isometric.mohsin@gmail.com</td>
+                            <td>+923335586757</td>
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+                            <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+                            </tr>
+                            
+                            
+                         <tr>
+                            <td><input type="checkbox" class="checkthis" /></td>
+                            <td>Mohsin</td>
+                            <td>Irshad</td>
+                            <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+                            <td>isometric.mohsin@gmail.com</td>
+                            <td>+923335586757</td>
+                            <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+                            <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+                            </tr>
+                            
+                           
+                            
+                           
+                            
+                            </tbody>
+                                
+                        </table>
+                        
+                        <div class="clearfix"></div>
+                        <ul class="pagination pull-right">
+                          <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+                          <li class="active"><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                        </ul>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+
+</div>
